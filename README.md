@@ -18,4 +18,7 @@ $ob->render('5rem', 'auto');
 $ob->go();
 ````
 
+Include Remotely or Localy from
+```https://raw.githubusercontent.com/kabeer11000/k-auth-sdk/master/dist/k-authsdk.php```
+
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
