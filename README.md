@@ -16,7 +16,6 @@ $ob->init($redirect, $id, $method);
 $ob->render('5rem', 'auto');
 //Or Directly Redirect To Auth Url without Button Click
 $ob->go();
-```<br/><br/>
-
+````
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
