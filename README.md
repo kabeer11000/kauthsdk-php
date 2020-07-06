@@ -5,17 +5,17 @@ View A Demo at [Kabeers Network Auth Site](http://auth.kabeersnetwork.rf.gd/serv
 
 
 
-```$ob = new KAuth();<br/>
-//Sample Website <br/>
-$redirect = 'http://auth.example.com/login/';<br/>
-$id = '6567948';<br/>
-$method = 'login';<br/>
-//INIT KAuth SDK<br/>
-$ob->init($redirect, $id, $method);<br/>
-//Render KAuth Button<br/>
-$ob->render('5rem', 'auto');<br/>
-//Or Directly Redirect To Auth Url without Button Click<br/>
-$ob->go();<br/>
+```$ob = new KAuth();
+//Sample Website to recieve Auth Callback
+$redirect = 'http://auth.example.com/login/';
+$id = '6567948';
+$method = 'login';
+//INIT KAuth SDK
+$ob->init($redirect, $id, $method);
+//Render KAuth Button
+$ob->render('5rem', 'auto');
+//Or Directly Redirect To Auth Url without Button Click
+$ob->go();
 ```<br/><br/>
 
 
