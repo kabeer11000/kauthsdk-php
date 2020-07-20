@@ -28,7 +28,7 @@ $ob->go();
 ````
 
 Include Remotely or Localy from
-```https://raw.githubusercontent.com/kabeer11000/k-auth-sdk/master/dist/k-authsdk.php```
+```https://raw.githubusercontent.com/kabeer11000/kauthsdk-php/master/dist/k-authsdk.php```
 
 Looking for JavaScript SDK? [Click Here](https://github.com/kabeer11000/kauthsdk-js/)
 
