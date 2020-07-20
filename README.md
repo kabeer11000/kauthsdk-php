@@ -20,7 +20,7 @@ $ob->init($redirect, $id, $method);
 
 
 //Render KAuth Button
-$ob->render('5rem', 'auto');
+$ob->render('5rem', 'auto', 'dark');
 
 
 //Or Directly Redirect To Auth Url without Button Click
