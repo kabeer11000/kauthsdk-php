@@ -5,12 +5,15 @@ View A Demo at [Kabeers Network Auth Site](http://auth.kabeersnetwork.rf.gd/serv
 
 
 
-```$ob = new KAuth();
+```
 //Sample Website to recieve Auth Callback
 $redirect = 'http://auth.example.com/login/';
 $id = '6567948';
 $method = 'login';
 
+
+//New KAuth Instance
+$ob = new KAuth();
 
 //INIT KAuth SDK
 $ob->init($redirect, $id, $method);
