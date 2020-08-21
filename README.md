@@ -48,7 +48,7 @@ $kauth->deleteToken('[Key]') // Delete From Saved Storage
 
 ## Example Way to Parse Callback
 
-```
+```php
 if ($kauth->tokens) {
     foreach ($kauth->tokens as $token) {
         foreach ($token as $t => $value) {
