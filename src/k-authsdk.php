@@ -116,6 +116,22 @@ class KAuth
         }
         return true;
     }
+    
+    public function deleteToken( String $key ){
+        if (!$key) return 0;
+        $return = null;
+        $key = md5($key);
+        if (isset($this->save_dir) && $this->save_dir !== null) {
+            try {
+                unlink("$this->save_dir/$key.kauth_store");
+                $return = true;
+            } catch (Exception $e) {
+                $return = false;
+            }
+            return $return;
+        }
+        return true;
+    }
 
     public function createAuthURI(Array $claims, String $callback, String $state, String $response_type = 'code', String $prompt = 'consent')
     {
