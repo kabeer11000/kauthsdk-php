@@ -5,24 +5,33 @@ View A Demo at [Kabeers Network Auth Site](http://auth.kabeersnetwork.rf.gd/serv
 
 
 
-```
+```php
 // New KAuth Instance
 $kauth = new KAuth();
 
 
 // Initalize KAuth SDK
-$kauth->init('[CLIENT PUBLIC]', '[CLIENT SECRET]', /* Save Refresh Token Directory */ './', /* Verify OAuth State */ true);
+$kauth->init(
+    '[CLIENT PUBLIC]',
+    '[CLIENT SECRET]',
+    /* Save Refresh Token Directory */ './', 
+    /* Verify OAuth State */ true
+);
 
 // [OPTIONAL] Create Auth URI to use Render and Redirect Methods
 $kauth->createAuthURI(
     [/* Claims */ 'p6rouHTvGJJCn9OuUNTZRfuaCnwc6:files'],
-     /* Callback URL */ 'https://yourdomain.com/callback',
-     /* OAuth State */ uniqid(),
-     /* OAuth Response Type */ 'code'
+    /* Callback URL */ 'https://yourdomain.com/callback',
+    /* OAuth State */ uniqid(),
+    /* OAuth Response Type */ 'code'
 );
 
 // Echo A Kabeers Auth Button
-echo $kauth->render( /* Height */ '5rem', /* Width */ 'auto', /* Theme, Light Or Dark */ 'dark');
+echo $kauth->render( 
+    /* Height */ '5rem', 
+    /* Width */ 'auto', 
+    /* Theme, Light Or Dark */ 'dark'
+);
 
 
 // Or Redirect Directly To Auth URL
@@ -34,6 +43,7 @@ $kauth->redirect();
 $kauth->getToken('[Key']); // Get From Saved Storage
 $kauth->saveToken('[Key]', '[Value]'); // Save To Storage
 $kauth->deleteToken('[Key]') // Delete From Saved Storage
+
 ```
 
 ## Example Way to Parse Callback
