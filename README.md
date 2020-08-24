@@ -75,9 +75,8 @@ $kauth->deleteToken('[Key]') // Delete From Saved Storage
 
 ## Getting User Info
 
+Natively hit userinfo endpoint and get User Info
 ```php
-// getUserInfo() // Natively hit userinfo endpoint and get User Info
-
 
 echo getUserInfo(['access_token'])
 
