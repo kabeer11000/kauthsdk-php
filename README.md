@@ -36,7 +36,7 @@ $kauth = new KAuth();
 $kauth->init(
     '[CLIENT PUBLIC]',
     '[CLIENT SECRET]',
-    /* Save Refresh Token Directory */ './', 
+    /* Save Refresh Token Directory */ './path/to/storage/folder/', 
     /* Verify OAuth State */ true
 );
 
