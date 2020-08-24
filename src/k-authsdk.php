@@ -37,7 +37,7 @@ class KAuth
         'UserInfo' => 'https://kabeers-auth.herokuapp.com/user/userinfo',
         'AccessToken' => 'https://kabeers-auth.herokuapp.com/auth/token',
         'RefreshToken' => 'https://kabeers-auth.herokuapp.com/auth/refresh',
-        'AuthURI' => 'https://kabeers-auth.herokuapp.com/auth'
+        'AuthURI' => 'https://kabeers-auth.herokuapp.com/auth/authorize'
     );
     /**
      * @var bool
