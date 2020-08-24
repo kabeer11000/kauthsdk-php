@@ -23,6 +23,11 @@ View A Demo at [Kabeers Network Auth Site](http://auth.kabeersnetwork.rf.gd/serv
 ### Code Example
 
 ```php
+//Include The SDK
+include 'k-authsdk.php';
+use Kabeers\KAuth;
+
+
 // New KAuth Instance
 $kauth = new KAuth();
 
