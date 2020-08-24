@@ -22,8 +22,10 @@ $kauth->init(
 $kauth->createAuthURI(
     [/* Claims */ 'p6rouHTvGJJCn9OuUNTZRfuaCnwc6:files'],
     /* Callback URL */ 'https://yourdomain.com/callback',
-    /* OAuth State */ uniqid(),
-    /* OAuth Response Type */ 'code'
+    /* OAuth State Uniqid Or Leave As '' */ uniqid(),
+    /* Optional OAuth Response Type "code" OR "token" */ 'code',
+    /* Optional Prompt Type */ 'consent',
+    /* Optional State and OIDC Nonce Length */ 8
 );
 
 // Echo A Kabeers Auth Button
