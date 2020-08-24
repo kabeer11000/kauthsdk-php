@@ -4,7 +4,7 @@ Add Kabeers Network Authorization System and Account Chooser inside your PHP app
 
 View A Demo at [Kabeers Network Auth Site](http://auth.kabeersnetwork.rf.gd/server/account/).
 
-Supports
+### Supports
 - Oauth Implict Grant Type
 - Oauth Authorization Code Grant Type
 - OIDC Id Token Grant
@@ -19,6 +19,7 @@ Supports
 - Creating Oauth URI with callback
 
 
+### Code Example
 
 ```php
 // New KAuth Instance
