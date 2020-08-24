@@ -75,7 +75,7 @@ $kauth->deleteToken('[Key]') // Delete From Saved Storage
 
 ## Getting User Info
 
-```
+```php
 // getUserInfo() // Natively hit userinfo endpoint and get User Info
 
 
