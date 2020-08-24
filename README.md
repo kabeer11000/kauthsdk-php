@@ -62,11 +62,24 @@ echo $kauth->render(
 $kauth->redirect();
 
 
-// Other Useful Methods
+```
 
+## Saving, Retriving and Deleting Tokens
+
+```php
 $kauth->getToken('[Key']); // Get From Saved Storage
 $kauth->saveToken('[Key]', '[Value]'); // Save To Storage
 $kauth->deleteToken('[Key]') // Delete From Saved Storage
+
+```
+
+## Getting User Info
+
+```
+// getUserInfo() // Natively hit userinfo endpoint and get User Info
+
+
+echo getUserInfo(['access_token'])
 
 ```
 
