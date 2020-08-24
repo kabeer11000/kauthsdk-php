@@ -1,7 +1,22 @@
 ## Kabeers Auth SDK.
 
 Add Kabeers Network Authorization System and Account Chooser inside your PHP app with our PHP SDK.
+
 View A Demo at [Kabeers Network Auth Site](http://auth.kabeersnetwork.rf.gd/server/account/).
+
+Supports
+- Oauth Implict Grant Type
+- Oauth Authorization Code Grant Type
+- OIDC Id Token Grant
+- Oauth Refresh Tokens
+- Saving, Deleting, Retriving Tokens For Later Use
+- Rendering Fedrated Sign in Buttons
+- Directly Redirecting To Auth URI
+- Handling and Parsing Oauth2 Callback
+- Natively Supports calling 'userinfo' endpoint & retriving User Info & id
+- Generating & verifying Secure OIDC 'nonce' and oauth 'state' parameters
+- Session Based State Verification To Protect against CSRF attacks
+- Creating Oauth URI with callback
 
 
 
