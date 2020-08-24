@@ -17,6 +17,7 @@ View A Demo at [Kabeers Network Auth Site](http://auth.kabeersnetwork.rf.gd/serv
 - Generating & verifying Secure OIDC 'nonce' and oauth 'state' parameters
 - Session Based State Verification To Protect against CSRF attacks
 - Creating Oauth URI with callback
+- Creating Auth URI with multiple Oauth Scopes
 
 
 ### Code Example
@@ -36,7 +37,7 @@ $kauth->init(
 
 // [OPTIONAL] Create Auth URI to use Render and Redirect Methods
 $kauth->createAuthURI(
-    [/* Claims */ 'p6rouHTvGJJCn9OuUNTZRfuaCnwc6:files'],
+    [/* Scopes */ 'p6rouHTvGJJCn9OuUNTZRfuaCnwc6:files'],
     /* Callback URL */ 'https://yourdomain.com/callback',
     /* OAuth State Uniqid Or Leave As '' */ uniqid(),
     /* Optional OAuth Response Type "code" OR "token" */ 'code',
